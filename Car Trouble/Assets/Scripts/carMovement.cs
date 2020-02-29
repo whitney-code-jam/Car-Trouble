@@ -28,7 +28,7 @@ public class carMovement : MonoBehaviour
         turningVel = Input.GetAxisRaw("Horizontal");
 
         //adds velocity accordingly
-        addVel(speedAcc, 4);
+        addVel(speedAcc, 3);
 
         //turns vechicle
         if (Mathf.Abs(turningVel) > 0)
@@ -64,7 +64,7 @@ public class carMovement : MonoBehaviour
         {
             if (rb.velocity.z < 0)
             {
-                rb.AddForce(transform.forward * (b + 10) * f);
+                rb.AddForce(transform.forward * (b + 5) * f);
             }
             else
             {
@@ -102,7 +102,7 @@ public class carMovement : MonoBehaviour
 
             if (rb.velocity.z > 0)
             {
-                rb.AddForce(transform.forward * (b + 10) * f);
+                rb.AddForce(transform.forward * (b + 5) * f);
             }
             else
             {
