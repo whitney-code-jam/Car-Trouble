@@ -2143,6 +2143,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Car (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3061838012751047443, guid: 5974d9affc816ce4b84165d54c9d2ab7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5974d9affc816ce4b84165d54c9d2ab7, type: 3}
 --- !u!1 &795187033
@@ -2368,6 +2373,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Red Car (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3061838012751047443, guid: 5974d9affc816ce4b84165d54c9d2ab7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5974d9affc816ce4b84165d54c9d2ab7, type: 3}
@@ -2844,6 +2854,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Red Car (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3061838012751047443, guid: 5974d9affc816ce4b84165d54c9d2ab7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5974d9affc816ce4b84165d54c9d2ab7, type: 3}
