@@ -294,6 +294,7 @@ GameObject:
   - component: {fileID: 3485688821942376254}
   - component: {fileID: 2907009413094808189}
   - component: {fileID: 1122907064459046381}
+  - component: {fileID: 215327168}
   m_Layer: 0
   m_Name: Steet Light
   m_TagString: Untagged
@@ -378,3 +379,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &215327168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819073239524014142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea32d71e0f6530b42b209c4332cd3b05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Red: 0
+  Yellow: 0
+  Green: 0
+  Exceptions: 
+  Pos: 
+  lightType: 0

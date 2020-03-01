@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class carMovement : MonoBehaviour
 {
-    [SerializeField]private float speedAcc;
-    [SerializeField]private float turningVel;
+    [SerializeField] private float speedAcc;
+    [SerializeField] private float turningVel;
     [SerializeField] private float tvSpeed;
-    [SerializeField]private bool isTurning;
-    [SerializeField]private Rigidbody rb;
-    [SerializeField]private Animator anim;
+    [SerializeField] private bool isTurning;
+    [SerializeField] private Rigidbody rb;
+    [SerializeField] private Animator anim;
 
 
     // Start is called before the first frame update
@@ -40,9 +40,6 @@ public class carMovement : MonoBehaviour
             isTurning = false;
         }
         turning(turningVel);
-
-        //shows velocity
-        Debug.Log("" + rb.velocity);
     }
 
     public void addVel(float f, float b)
@@ -55,7 +52,7 @@ public class carMovement : MonoBehaviour
         {
             anim.SetBool("Stop", false);
         }
-        if (Mathf.Abs(rb.velocity.z) > 15 )
+        if (Mathf.Abs(rb.velocity.z) > 15)
         {
             rb.velocity = Vector3.zero;
         }
@@ -70,16 +67,16 @@ public class carMovement : MonoBehaviour
             {
                 if (isTurning)
                 {
-                  
-                    rb.velocity = transform.forward * (Mathf.Sqrt(Mathf.Pow(rb.velocity.z, 2) + Mathf.Pow(rb.velocity.x,2)));
+
+                    rb.velocity = transform.forward * (Mathf.Sqrt(Mathf.Pow(rb.velocity.z, 2) + Mathf.Pow(rb.velocity.x, 2)));
                     rb.AddForce(transform.forward * b * f);
                 }
-                else 
+                else
                 {
-                    
+
                     rb.AddForce(transform.forward * b * f);
                 }
-                
+
             }
         }
         else if (f == 0)
@@ -92,7 +89,7 @@ public class carMovement : MonoBehaviour
             {
                 rb.AddForce(transform.forward * (b - 2));
             }
-            else 
+            else
             {
                 rb.velocity = Vector3.zero;
             }
@@ -113,19 +110,24 @@ public class carMovement : MonoBehaviour
                 }
                 else
                 {
-                    
+
                     rb.AddForce(transform.forward * b * f);
                 }
             }
         }
 
-       
+
     }
     public void turning(float f)
     {
-        this.transform.Rotate(0f, tvSpeed * f * Time.deltaTime, 0f);
+       
+            this.transform.Rotate(0f, tvSpeed * f * Time.deltaTime, 0f);
+        
     }
-   
 
 
 }
+   
+
+
+
